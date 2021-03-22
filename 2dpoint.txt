@@ -1,0 +1,21 @@
+            double x, y; // making my x and y
+            public _2dpoint(double x, double y) // same here dont forget to make it public
+            {
+                this.x = x;
+                this.y = y;
+            }
+
+            public double getDecisions() // dont forget to make it public because it cant finde it else
+            {
+                return Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2));// i use vektor to get my awnsers
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            _2dpoint p1 = new _2dpoint(0, 0);
+            _2dpoint p2 = new _2dpoint(5, 3);// the numbers can be what every you want them to be
+
+            Console.WriteLine(p1.getDecisions()); // call on your damn script
+            Console.WriteLine(p2.getDecisions());
+        }
