@@ -1,0 +1,13 @@
+C:\Users\Omad\source\repos\BankLUL\BankLUL\obj\Debug\netcoreapp3.1\BankLUL.csprojAssemblyReference.cache
+C:\Users\Omad\source\repos\BankLUL\BankLUL\obj\Debug\netcoreapp3.1\BankLUL.AssemblyInfoInputs.cache
+C:\Users\Omad\source\repos\BankLUL\BankLUL\obj\Debug\netcoreapp3.1\BankLUL.AssemblyInfo.cs
+C:\Users\Omad\source\repos\BankLUL\BankLUL\obj\Debug\netcoreapp3.1\BankLUL.csproj.CoreCompileInputs.cache
+C:\Users\Omad\source\repos\BankLUL\BankLUL\bin\Debug\netcoreapp3.1\BankLUL.exe
+C:\Users\Omad\source\repos\BankLUL\BankLUL\bin\Debug\netcoreapp3.1\BankLUL.deps.json
+C:\Users\Omad\source\repos\BankLUL\BankLUL\bin\Debug\netcoreapp3.1\BankLUL.runtimeconfig.json
+C:\Users\Omad\source\repos\BankLUL\BankLUL\bin\Debug\netcoreapp3.1\BankLUL.runtimeconfig.dev.json
+C:\Users\Omad\source\repos\BankLUL\BankLUL\bin\Debug\netcoreapp3.1\BankLUL.dll
+C:\Users\Omad\source\repos\BankLUL\BankLUL\bin\Debug\netcoreapp3.1\BankLUL.pdb
+C:\Users\Omad\source\repos\BankLUL\BankLUL\obj\Debug\netcoreapp3.1\BankLUL.dll
+C:\Users\Omad\source\repos\BankLUL\BankLUL\obj\Debug\netcoreapp3.1\BankLUL.pdb
+C:\Users\Omad\source\repos\BankLUL\BankLUL\obj\Debug\netcoreapp3.1\BankLUL.genruntimeconfig.cache
