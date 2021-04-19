@@ -10,7 +10,7 @@ namespace BankLUL
         private List<Transaction> allTransactions = new List<Transaction>();
 
         // We make a seed for the account so we can have unique accounts with the same name
-        private static int accountNumberSeed = 1234567890;
+        private static int accountNumberSeed = 1;
         
         public string Number { get; }
         
