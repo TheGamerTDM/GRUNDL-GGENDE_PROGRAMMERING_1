@@ -13,7 +13,7 @@ namespace Rap_Finands
     class Program
     {
         public static string reginummer = "4242";
-        //public static string datafil = "bank.json"; //Her ligger alt data i
+        public static string datafil = "bank.json"; //Her ligger alt data i
         public static List<Konto> konti;
 
         static void Main(string[] args)
@@ -109,7 +109,7 @@ namespace Rap_Finands
                     Console.Write("Beløb: ");
                     string havBeløb = Console.ReadLine();
 
-                    var saldoEfterHav = t.saldo - Convert.ToInt32(havBeløb);
+                    float saldoEfterHav = t.saldo - Convert.ToInt32(havBeløb);
 
                     Console.WriteLine("Du har hævet " + saldoEfterHav);
                     string tekst = "Du har hævet penge: ";
@@ -121,7 +121,7 @@ namespace Rap_Finands
                     Console.Write("Beløb: ");
                     string sætIndBeløb = Console.ReadLine();
 
-                    var saldeEfterIndsat = t.saldo + Convert.ToInt32(sætIndBeløb);
+                    float saldeEfterIndsat = t.saldo + Convert.ToInt32(sætIndBeløb);
 
                     Console.WriteLine("Du har sat så mange penge ind: " + saldeEfterIndsat);
                     string tekst2 = "Du har ind sat penge: ";
@@ -223,7 +223,7 @@ namespace Rap_Finands
         public static void gem() 
         {
             File.WriteAllText(datafil,JsonConvert.SerializeObject(konti));
-            File.Delete(datafil); //Fjern debug fil
+            //File.Delete(datafil); //Fjern debug fil
         }
 
         public static void hent()
