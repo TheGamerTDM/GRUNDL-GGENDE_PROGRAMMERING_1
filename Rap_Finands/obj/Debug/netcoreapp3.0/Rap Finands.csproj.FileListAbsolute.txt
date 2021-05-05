@@ -11,3 +11,18 @@ c:\Users\sinb\Documents\Opgave med rap finands\obj\Debug\netcoreapp3.0\Rap Finan
 C:\Users\sinb\Documents\Opgave med rap finands\obj\Debug\netcoreapp3.0\Rap Finands.csproj.CopyComplete
 c:\Users\sinb\Documents\Opgave med rap finands\obj\Debug\netcoreapp3.0\Rap Finands.dll
 c:\Users\sinb\Documents\Opgave med rap finands\obj\Debug\netcoreapp3.0\Rap Finands.pdb
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\bin\Debug\netcoreapp3.0\Rap Finands.exe
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\bin\Debug\netcoreapp3.0\Rap Finands.deps.json
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\bin\Debug\netcoreapp3.0\Rap Finands.runtimeconfig.json
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\bin\Debug\netcoreapp3.0\Rap Finands.runtimeconfig.dev.json
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\bin\Debug\netcoreapp3.0\Rap Finands.dll
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\bin\Debug\netcoreapp3.0\Rap Finands.pdb
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\obj\Debug\netcoreapp3.0\Rap Finands.csprojAssemblyReference.cache
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\obj\Debug\netcoreapp3.0\Rap Finands.AssemblyInfoInputs.cache
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\obj\Debug\netcoreapp3.0\Rap Finands.AssemblyInfo.cs
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\obj\Debug\netcoreapp3.0\Rap Finands.csproj.CoreCompileInputs.cache
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\obj\Debug\netcoreapp3.0\Rap Finands.csproj.CopyComplete
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\obj\Debug\netcoreapp3.0\Rap Finands.dll
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\obj\Debug\netcoreapp3.0\Rap Finands.pdb
+C:\Users\Omad\Documents\GitHub\GRUNDL-GGENDE_PROGRAMMERING_1\Rap_Finands\obj\Debug\netcoreapp3.0\Rap Finands.genruntimeconfig.cache
