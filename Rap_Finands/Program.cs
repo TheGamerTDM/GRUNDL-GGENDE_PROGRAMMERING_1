@@ -13,9 +13,9 @@ namespace Rap_Finands
     class Program
     {
         public static string reginummer = "4242";
-        public static string datafil = "bank.json"; //Her ligger alt data i
+        //public static string datafil = "bank.json"; //Her ligger alt data i
         public static List<Konto> konti;
-        public static float belob;
+
         static void Main(string[] args)
         {
             Console.WriteLine("Henter alt kontodata");
@@ -95,22 +95,61 @@ namespace Rap_Finands
         
         static void opretTransaktion(Konto k) 
         {
-            Console.Write("Tekst: ");
-            string tekst = Console.ReadLine();
-            Console.Write("Beløb: ");
-            float amount = float.Parse(Console.ReadLine());
-            if (gemTrans(k,tekst,amount)) 
+
+            var t = new Transaktion();
+            Console.WriteLine("1. Hæv");
+            Console.WriteLine("2. Sæt ind");
+            Console.Write("> ");
+            string valg2 = Console.ReadLine();
+
+            switch (Convert.ToInt32(valg2))
             {
-                Console.WriteLine("Transkationen blev gemt. Ny saldo på kontoen: "+findSaldo(k));
-                gem();
-            } else
-                Console.WriteLine("Transaktionen kunne ikke gemmes (Der var sikkert ikke penge nok på kontoen)");
+                case 1:
+                    Console.WriteLine("Hvor meget ville du hæve?");
+                    Console.Write("Beløb: ");
+                    string havBeløb = Console.ReadLine();
+
+                    var saldoEfterHav = t.saldo - Convert.ToInt32(havBeløb);
+
+                    Console.WriteLine("Du har hævet " + saldoEfterHav);
+                    string tekst = "Du har hævet penge: ";
+                    gemTrans(k, tekst, saldoEfterHav);
+                    gem();
+                    break;
+                case 2:
+                    Console.WriteLine("Hvor meget ville du sætte ind?");
+                    Console.Write("Beløb: ");
+                    string sætIndBeløb = Console.ReadLine();
+
+                    var saldeEfterIndsat = t.saldo + Convert.ToInt32(sætIndBeløb);
+
+                    Console.WriteLine("Du har sat så mange penge ind: " + saldeEfterIndsat);
+                    string tekst2 = "Du har ind sat penge: ";
+                    gemTrans(k, tekst2, saldeEfterIndsat);
+                    gem();
+                    break;
+                default:
+                    Console.WriteLine("UGYLDIGT VALGT!!");
+                    Console.ReadKey();
+                    break;
+            }
+
+
+            //Console.Write("Tekst: ");
+            //string tekst = Console.ReadLine();
+            //Console.Write("Beløb: ");
+            //float amount = float.Parse(Console.ReadLine());
+            //if (gemTrans(k,tekst,amount)) 
+            //{
+            //    Console.WriteLine("Transkationen blev gemt. Ny saldo på kontoen: "+findSaldo(k));
+            //    
+          
         }
 
         static Konto opretKonto() 
         {
             Konto k = lavKonto();
-            Console.Write("Navn på kontoejer:");
+            Console.Write("Navn på kontoejer: ");
             k.ejer = Console.ReadLine();
             Console.WriteLine("Konto oprettet!");
             konti.Add(k);
@@ -139,14 +178,6 @@ namespace Rap_Finands
             return nr;
         }
 
-        static void udSkrivKonti() 
-        {
-            Console.WriteLine("================");
-            foreach (Konto k in konti) 
-            {
-                Console.WriteLine(k.registreringsnr+" "+k.kontonr+" ejes af "+k.ejer);
-            }
-        }
 
         static void udSkrivKonto(Konto k) 
         {
@@ -155,21 +186,18 @@ namespace Rap_Finands
             Console.WriteLine("Tekst\t\t\t\tBeløb\t\tSaldo");
             foreach (Transaktion t in k.transaktioner) 
             {
-                Console.Write(t.tekst+"\t\t\t\t");
+                Console.Write(t.tekst+"\t\t\t");
                 Console.Write(t.amount+"\t\t");
                 Console.WriteLine(t.saldo);
             }
             Console.WriteLine("================\n");
-
         }
         
         public static bool gemTrans(Konto konto, string tekst, float beløb) 
         {
             var saldo = findSaldo(konto);
-            if (saldo + beløb < 0) return false;
             var t = new Transaktion();
             t.tekst = tekst;
-            t.amount = belob;
             t.saldo = t.amount + saldo;
             t.dato = DateTime.Now;
             
